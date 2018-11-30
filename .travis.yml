@@ -3,14 +3,12 @@ language: python
 python:
 - "2.7"
 
-cache: pip
-
 install:
 - pip install -r requirements.txt
 - pip install coveralls
 
 script:
-- pytest --cov-report term-missing --cov=app
+- pytest 
 
 after success:
-- codeclimate-test-reporter
+- coveralls
