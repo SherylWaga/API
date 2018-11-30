@@ -34,3 +34,11 @@ class Locate():
            return jsonify({"status":404,"data": "Redflag not found"})
         return make_response( jsonify({"status":200,"data":record[0]}),200)
 
+    def delete_record(self,item_id):
+         for record in Redflags:
+            if record["id"]==item_id:
+                self.db.remove(record)
+                return make_response(jsonify({  "status":200, "data":[{"id":record["id"],"message":"Successfully deleted"}]  }),200)
+           
+        
+   
