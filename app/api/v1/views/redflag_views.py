@@ -15,4 +15,24 @@ class RedflagsSpecific(Resource):
         return specific_data
     def delete(self,item_id):
         return Locate().delete_record(item_id)
- 
+    def put(self,item_id):
+        return Locate().edit_record(item_id)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
