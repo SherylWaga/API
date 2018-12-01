@@ -1,3 +1,3 @@
-web:gunicon run:app
+web: gunicorn run:app
 
 
