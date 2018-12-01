@@ -7,6 +7,8 @@ class Locate():
     def __init__(self):
         self.db = Redflags
 
+    def all(self):
+        return jsonify({"status":200,"data":self.db})
     def new(self):
         #self.parser = reqparse.RequestParser()
         #args = self.parser.parse_args()
