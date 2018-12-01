@@ -1,0 +1,3 @@
+web:gunicon run:app
+
+
