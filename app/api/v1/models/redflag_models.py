@@ -41,4 +41,9 @@ class Locate():
                 return make_response(jsonify({  "status":200, "data":[{"id":record["id"],"message":"Successfully deleted"}]  }),200)
            
         
-   
+    def edit_record(self, item_id):
+        for record in Redflags:
+            if record["id"]==item_id:
+                record['Title']=request.json['Title']
+                record['Location']=request.json['Location']
+                return jsonify({  "status":200, "data":[{"id":record["id"],"message":"Successfully updated"}]  },200)
