@@ -28,4 +28,9 @@ class Locate():
         resp=self.db.append(Redflag)
         return make_response(jsonify({"status":201, "data":[{"id":Redflag["id"],"message":"Adding redflag successful"}]}), 201)
 
-    
+    def specific(self,item_id):
+        record=[record for record in self.db if record['id']==item_id]
+        if len(record)==0:
+           return jsonify({"status":404,"data": "Redflag not found"})
+        return make_response( jsonify({"status":200,"data":record[0]}),200)
+
