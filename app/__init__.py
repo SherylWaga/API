@@ -1,13 +1,51 @@
-from flask_api import FlaskAPI
+from flask import Flask, Blueprint
 from .api.v1 import version_1 as v1
 from instance.config import app_config
+# from .db_config import create_tables
 
-def create_app(config_name):
-    app=FlaskAPI(__name__,instance_relative_config=True)
-    
+
+def create_app(config_name='development'):
+    app = Flask(__name__, instance_relative_config = True)
+    app.url_map.strict_slashes = False
+    app.config.from_object(app_config[config_name])
     app.config.from_pyfile('config.py')
+
+    # create-tables()
+
     app.register_blueprint(v1)
     return app
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from flask_api import FlaskAPI
+# from .api.v1 import version_1 as v1
+# from instance.config import app_config
+
+# def create_app(config_name):
+#     app=FlaskAPI(__name__,instance_relative_config=True)
+    
+#     app.config.from_pyfile('config.py')
+#     app.register_blueprint(v1)
+#     return app
 
 
 
@@ -20,7 +58,7 @@ def create_app(config_name):
 # #local imports
 
 
-# from  .api.v1.views.redflag_views import Redflags,RedflagsSpecific
+# # from  .api.v1.views.redflag_views import Redflags,RedflagsSpecific
 
 # def create_app():
 #     app=Flask(__name__)
