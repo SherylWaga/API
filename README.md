@@ -35,7 +35,7 @@ You can run the urls on postman
 <th>Description</th>
     <tr>
         <td>POST</td>
-        <td> 127.0.0.1/api/v1/redflags  </td>
+        <td>/api/v1/redflags  </td>
         <td>Create a Redflag </td>
     </tr>
      <tr>
