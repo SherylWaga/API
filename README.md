@@ -40,22 +40,22 @@ You can run the urls on postman
     </tr>
      <tr>
         <td>GET</td>
-         <td> 127.0.0.1/api/v1/redflags</td>
+         <td>/api/v1/redflags</td>
         <td>View Redflags </td>
     </tr>
     <tr>
         <td>GET</td>
-         <td>127.0.0.1/api/v1/redflags/1 </td>
+         <td>/api/v1/redflags/1 </td>
         <td>View specific redflag </td>
     </tr>
     <tr>
         <td>PUT</td>
-         <td>127.0.0.1/api/v1/redflags/1 </td>
+         <td>/api/v1/redflags/1 </td>
         <td>Edit comment and location of a redflag </td>
     </tr>
     <tr>
         <td>DELETE</td>
-         <td>127.0.0.1/api/v1/redflags/1 </td>
+         <td>/api/v1/redflags/1 </td>
         <td>Delete a Redflag </td>
     </tr>
 </table>
