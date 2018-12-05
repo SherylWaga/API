@@ -59,7 +59,7 @@ class Redflag(unittest.TestCase):
         res = self.client().post('/api/v1/redflags', data=json.dumps(self.data),
                                  content_type="application/json")
         self.assertEqual(res.status_code, 201)
-        res = self.client().put('api/v1/redflags/3', data=json.dumps(self.dt),
+        res = self.client().put('api/v1/redflags/3', data=json.dumps(self.data),
                                 content_type="application/json")
         self.assertEqual(res.status_code, 200)
 
