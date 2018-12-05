@@ -1,4 +1,4 @@
-from flask import request,jsonify
+from flask import request,jsonify,make_response
 from flask_restful import Resource
 #local import
 from app.api.v1.views.redflag_views import Instance
