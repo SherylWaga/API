@@ -41,16 +41,3 @@ class user():
 
 
 
-# from flask import request,jsonify,make_response 
-# from flask_restful import Resource
-# #local import
-# from app.api.v1.models.user_models import Register
-
-#     def post(self):
-#         user=Register().save_user()
-#         return make_response(jsonify({"status":201, "data":[{"id":user["id"],"message":"Registration successful"}]}), 201)
-#     #    if  self.db ["id"]== user_id :
-#     #        return  make_response(jsonify({"status":201, "data":[{"id":users["id"],"message":"Login successful"}]}), 201)
-#     #    else:
-#     #        newUser = Register().register_user()
-#     #        return newUser
