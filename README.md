@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/SherylWaga/API.svg?branch=develop)](https://travis-ci.org/SherylWaga/API)
 [![Maintainability](https://api.codeclimate.com/v1/badges/bd2ec3ecdf59e3451b49/maintainability)](https://codeclimate.com/github/SherylWaga/API/maintainability)
-[![Coverage Status](https://coveralls.io/repos/github/SherylWaga/API/badge.svg?branch=develop)](https://coveralls.io/github/SherylWaga/API?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/SherylWaga/API/badge.svg?branch=ch-heroku-deployment-162500653)](https://coveralls.io/github/SherylWaga/API?branch=ch-heroku-deployment-162500653)
 
 Corruption is a huge bane to Africa’s development. African countries must develop novel and localised solutions that will curb this menace, hence the birth of iReporter. iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention.
 
