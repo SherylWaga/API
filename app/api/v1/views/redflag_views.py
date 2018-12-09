@@ -14,7 +14,7 @@ class Instance():
         return jsonify({"status": 200, "data": self.db})
 
     def create_redflag(self):
-   
+       
         Redflag = {
             "id": len(self.db)+1,
             "createdon": datetime.datetime.now(),
@@ -28,6 +28,8 @@ class Instance():
             "Image": request.get_json()["Image"]
 
         }
+        
+                    
         for item in self.db:
             if item["Title"] == Redflag["Title"]:
               return make_response(jsonify({"status": 201, "message": " Record already exists "}), 201) 
@@ -59,8 +61,10 @@ class Instance():
 
     def edit_redflag(self, item_id):
         for record in Redflags:
-            if record["id"] == item_id:
-                record['Title'] = request.json['Title']
-                record['Location'] = request.json['Location']
+            if record["id"] == item_id :
+                # record['Title'] = request.json['Title']
+                # record['Location'] = request.json['Location']
                 return jsonify({"status": 200, "data": [{"id": record["id"], "message":"Successfully updated"}]}, 200)
+           
+            
         return jsonify({"status": 200, "data": [{"message": " Redflag does not exist"}]})
